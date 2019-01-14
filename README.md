@@ -1,7 +1,7 @@
-# grin-pool - Fork自https://github.com/grin-pool/grin-pool ， 主要面向中文用户，并更新AWS 和Azure 的快速部署方式
+# grin-pool - 主要面向中文用户，并更新AWS 和Azure 的快速部署方式
 
 ## 简介:
-一个Grin的开源矿池[Grin](https://github.com/mimblewimble/grin) Grin 是MimbleWimble 算法加密货币的实现
+一个MimbleWimble 算法加密货币[Grin](https://github.com/mimblewimble/grin)的开源矿池实现
 * Linux挖矿客户端: [mimblewimble/grin-miner](https://github.com/mimblewimble/grin-miner)
 * Linux挖矿客户端: [mozkomor/GrinGoldMiner](https://github.com/mozkomor/GrinGoldMiner)
 
