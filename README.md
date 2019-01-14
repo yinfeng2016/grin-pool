@@ -1,42 +1,42 @@
-# grin-pool
+# grin-pool - Fork自https://github.com/grin-pool/grin-pool ， 主要面向中文用户，并更新AWS 和Azure 的快速部署方式
 
-## What it is:
-An Open Source Mining Pool for [Grin](https://github.com/mimblewimble/grin) MimbleWimble Cryptocurrency Implementation
-* Supports Linux and Windows miners: [mimblewimble/grin-miner](https://github.com/mimblewimble/grin-miner) and [mozkomor/GrinGoldMiner](https://github.com/mozkomor/GrinGoldMiner)
+## 简介:
+一个Grin的开源矿池[Grin](https://github.com/mimblewimble/grin) Grin 是MimbleWimble 算法加密货币的实现
+* Linux挖矿客户端: [mimblewimble/grin-miner](https://github.com/mimblewimble/grin-miner)
+* Linux挖矿客户端: [mozkomor/GrinGoldMiner](https://github.com/mozkomor/GrinGoldMiner)
 
-## How to try it:
+## 试用方法:
 * [About](https://medium.com/@blade.doyle/mwgrinpool-com-a-grin-mining-pool-345d67cb8e98)
 * [Linux CPU Mining Guide](https://medium.com/@blade.doyle/cpu-mining-on-mwgrinpool-com-how-to-efb9ed102bc9)
 * [Linux GPU Mining Guide](https://medium.com/@blade.doyle/gpu-mining-on-mwgrinpool-com-how-to-72970e550a27)
 * [How to get Paid](https://medium.com/@blade.doyle/configure-payments-on-mwgrinpool-com-how-to-7b84163ec467)
 * [Gitter Discussion Group](https://gitter.im/grin-pool/Lobby)
 
-### The architecture:
-* Stateless Microservices
+### 架构:
+* 无状态的微服务架构
 
-### The components:
-* Pool Stratum Proxy: Rust
-* Pool data processing jobs: Python3/SQLAlchemy
-* Pool API: Python3/Flask/gunicorn
-* Pool Web UI: NodeJS/Electron/Bootstrap/React
-* Database: MariaDB/Redis
-* Build/Packaging: Docker
-* Deploy: gcloud Kuberntests CLI
+### 主要组件:
+* 矿池 Stratum 代理: Rust
+* 矿池数据处理: Python3/SQLAlchemy
+* 矿池 API: Python3/Flask/gunicorn
+* 矿池 Web UI: NodeJS/Electron/Bootstrap/React
+* 数据库: MariaDB/Redis
+* 打包: Docker
+* 部署: gcloud Kuberntests CLI/AWS Cloud Formation
 * Orchestration: Kubernetes
-* Log collection: Splunk
-* Load Balancer/Certificates: NGINX/LetsEncrypt
-* Monitoring & Alerting: ?? NotYet (Icinga?)
+* 日志收集: Splunk
+* 负载均衡/Certificates: NGINX/LetsEncrypt
+* 监控与告警: AWS CloudWatch
 
-#### To run the pool yourself: [ansible/roles/pool/files/README.md](ansible/roles/pool/files/README.md)
+#### GCP快速部署: [ansible/roles/pool/files/README.md](ansible/roles/pool/files/README.md)
 
-#### To build use the Dockerfile in: [stratum](stratum/) and [grin-py](grin-py/)
+#### 自行使用Dockerfile 部署: [stratum](stratum/) 和 [grin-py](grin-py/)
 
-### Current Status:
-* This project is under development, <B>~75%</B> complete, and will be ready soon after grin mainnet launch
-* Please contribute!
-* Join the discussion on [Gitter](https://gitter.im/grin-pool/Lobby)
+### 目前状态:
+* 汉化和修正初始阶段, <B>~10%</B> 完成度, 争取和原repo更新进度保持一致
+* 可以在此讨论（英文） [Gitter](https://gitter.im/grin-pool/Lobby)
 
-## Pizza and "beer" fund:
+## 捐献:
 ![BTC](https://ipfs.io/ipfs/QmZQxz5LdbCuyc8LcnUiCyTLzmWmHs644mAD7A91bmTzej) <sub>17Gmy9uhE6ziB1PzYT8MMY5A4va25dy3US</sub>
 
 ![XMR](https://ipfs.io/ipfs/QmTLh1DUXhNNuB4CkaTtv3VJftXaDEY7V8hYyYGVvYzMB8) <sub>43i7q6hVrMdgY21RH7nMghSPA6s5jjGXDeEmLjL3pNFfD1XBYqf6hJpWVabfGJ5ydJKdaBjKdFvMe1kaKRj5w7Ao7q7mK8v</sub>
